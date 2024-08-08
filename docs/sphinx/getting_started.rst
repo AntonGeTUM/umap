@@ -37,9 +37,9 @@ Basic Usage
 
 The interface to umap mirrors that of mmap(2) as shown:
 
-.. literalinclude:: ../../examples/psort.cpp
-                    :lines: 57-64
+.. literalinclude:: ../../examples/bfs/utility/map_file.hpp
+                    :lines: 113:113
 
 The following code is a simple example of how one may use umap:
 
-.. literalinclude:: ../../examples/psort.cpp
+.. literalinclude:: ../../examples/bfs/run_bfs.sh
