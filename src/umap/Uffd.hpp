@@ -23,8 +23,6 @@
 #include <sys/syscall.h>        // syscall()
 #include <unistd.h>             // syscall()
 
-#include <x86intrin.h>
-
 #include "umap/config.h"
 //
 // The UFFDIO_COPY_MODE_WP is only defined in later versions of Linux (>5.0)
@@ -36,6 +34,8 @@
 #include "umap/RegionDescriptor.hpp"
 #include "umap/RegionManager.hpp"
 #include "umap/WorkerPool.hpp"
+
+#include "umap/util/UINTR_syscalls.hpp"
 
 namespace Umap {
   class RegionManager;
