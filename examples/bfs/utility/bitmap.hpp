@@ -16,6 +16,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 #define LIB_UTILITY_BITMAP_HPP
 
 #include <iostream>
+#include <cstdint>
 
 namespace utility
 {

@@ -23,6 +23,8 @@
 #include <sys/syscall.h>        // syscall()
 #include <unistd.h>             // syscall()
 
+#include <x86intrin.h>
+
 #include "umap/config.h"
 //
 // The UFFDIO_COPY_MODE_WP is only defined in later versions of Linux (>5.0)

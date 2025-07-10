@@ -61,12 +61,6 @@ endif()
 
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 
-# Add GCC-specific compile flags to both libraries permanently
-if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-  target_compile_options(umap PRIVATE -m64 -muintr -no-pie -fPIC)
-  target_compile_options(umap-static PRIVATE -m64 -muintr -no-pie -fPIC)
-endif()
-
 install(TARGETS umap umap-static
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib
